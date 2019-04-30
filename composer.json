@@ -1,0 +1,31 @@
+{
+    "name": "dmsysop/laravelfullcalendar",
+    "description": "Helper para Laravel utilizando FullCalendar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Douglas Mariano",
+            "email": "douglasm@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "DMSysOp\\LaravelFullcalendar": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DMSysOp\\LaravelFullcalendar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Calendar": "DMSysOp\\LaravelFullcalendar\\Facades\\Calendar"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
